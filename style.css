@@ -101,7 +101,7 @@
 }
 #carlist {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 30px;
@@ -162,15 +162,20 @@
   padding: 5px 10px;
 }
 .Photo1_div {
+  width: 300px;
   background-color: #dd9447;
   padding: 5px 10px;
 }
 .Photo2_div {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 5px;
   padding: 5px 10px;
 }
 .hidden {
   display: none;
+}
+.cardPhoto {
+  width: 150px;
 }

@@ -31,7 +31,7 @@ posts.addEventListener("click", (e) => {
   fetch("https://jsonplaceholder.typicode.com/posts")
     .then((res) => res.json())
     .then((data) => {
-      loader.classList.add("hidden");
+      loader.classList.remove("hidden");
       error.classList.add("hidden");
       creatForm(data);
     })
@@ -87,7 +87,7 @@ users.addEventListener("click", (e) => {
   fetch("https://jsonplaceholder.typicode.com/users")
     .then((res) => res.json())
     .then((data) => {
-      loader.classList.add("hidden");
+      loader.classList.remove("hidden");
       error.classList.add("hidden");
       creatUser(data);
     })
@@ -108,10 +108,10 @@ photos.addEventListener("click", (e) => {
 
       li.classList.add("card");
 
-      carlist.innerHTML = `
+      carlist.innerHTML += `
         <div class="Photo1_div">
     <div class="Photo2_div">
-    <img src= ${thumbnailUrl}/>
+    <img class="cardPhoto" src= ${thumbnailUrl}/>
     <p class="price">Id: ${albumId}</p>
     <p>${title}</p>
     </div>
@@ -123,9 +123,9 @@ photos.addEventListener("click", (e) => {
   fetch("https://jsonplaceholder.typicode.com/photos")
     .then((res) => res.json())
     .then((data) => {
-      loader.classList.add("hidden");
+      loader.classList.remove("hidden");
       error.classList.add("hidden");
-      creatPhotos(data);
+      creatPhotos(data.slice(0, 10));
     })
     .catch((err) => {
       loader.classList.add("hidden");
@@ -160,7 +160,7 @@ todos.addEventListener("click", (e) => {
   fetch("https://jsonplaceholder.typicode.com/todos")
     .then((res) => res.json())
     .then((data) => {
-      loader.classList.add("hidden");
+      loader.classList.remove("hidden");
       error.classList.add("hidden");
       creatForm(data);
     })
