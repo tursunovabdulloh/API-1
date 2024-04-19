@@ -82,3 +82,95 @@
     background-position: 0 0;
   }
 }
+
+.Todo1_div {
+  background-color: var(--card-color);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.Todo2_div {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 10px;
+  padding: 15px 30px;
+  width: 300px;
+}
+#carlist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 50px 0;
+}
+.loader {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* user */
+
+.cardUser {
+  background-color: #002bff;
+}
+.user1_div {
+  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  width: 300px;
+  color: #fff;
+}
+.user2_div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: #29d4d4;
+}
+.card {
+  background-color: #000;
+}
+.Post1_div {
+  background-color: #ff7300;
+  color: #fff;
+  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 10px;
+  padding: 15px 30px;
+  width: 300px;
+}
+.Post2_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+}
+.Photo1_div {
+  background-color: #dd9447;
+  padding: 5px 10px;
+}
+.Photo2_div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px 10px;
+}
+.hidden {
+  display: none;
+}
